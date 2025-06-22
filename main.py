@@ -247,6 +247,60 @@ entry_website.grid(row=4, column=1)
 button_dodaj_komis = Button(ramka_formularz_komis, text="Dodaj komis", command=add_dealership)
 button_dodaj_komis.grid(row=5, column=0, columnspan=2)
 
+label_formularz_samochod = Label(ramka_formularz_samochod, text="Dodaj samochód:")
+label_formularz_samochod.grid(row=0, column=0, columnspan=2)
+
+label_marka = Label(ramka_formularz_samochod, text="Marka:")
+label_marka.grid(row=1, column=0, sticky=W)
+entry_marka = Entry(ramka_formularz_samochod)
+entry_marka.grid(row=1, column=1)
+
+label_model = Label(ramka_formularz_samochod, text="Model:")
+label_model.grid(row=2, column=0, sticky=W)
+entry_model = Entry(ramka_formularz_samochod)
+entry_model.grid(row=2, column=1)
+
+label_rok = Label(ramka_formularz_samochod, text="Rok produkcji:")
+label_rok.grid(row=3, column=0, sticky=W)
+entry_rok = Entry(ramka_formularz_samochod)
+entry_rok.grid(row=3, column=1)
+
+label_cena = Label(ramka_formularz_samochod, text="Cena (PLN):")
+label_cena.grid(row=4, column=0, sticky=W)
+entry_cena = Entry(ramka_formularz_samochod)
+entry_cena.grid(row=4, column=1)
+
+label_przebieg = Label(ramka_formularz_samochod, text="Przebieg (km):")
+label_przebieg.grid(row=5, column=0, sticky=W)
+entry_przebieg = Entry(ramka_formularz_samochod)
+entry_przebieg.grid(row=5, column=1)
+
+button_dodaj_samochod = Button(ramka_formularz_samochod, text="Dodaj samochód", command=add_car_to_dealership)
+button_dodaj_samochod.grid(row=6, column=0, columnspan=2)
+
+# Ramka szczegóły komisu
+label_szczegoly = Label(ramka_szczegoly, text="Szczegóły komisu:")
+label_szczegoly.grid(row=0, column=0, sticky=W)
+
+label_szczegoly_nazwa = Label(ramka_szczegoly, text="Nazwa:")
+label_szczegoly_nazwa.grid(row=1, column=0)
+label_szczegoly_nazwa_wartosc = Label(ramka_szczegoly, text="...")
+label_szczegoly_nazwa_wartosc.grid(row=1, column=1)
+
+label_szczegoly_adres = Label(ramka_szczegoly, text="Adres:")
+label_szczegoly_adres.grid(row=1, column=2)
+label_szczegoly_adres_wartosc = Label(ramka_szczegoly, text="...")
+label_szczegoly_adres_wartosc.grid(row=1, column=3)
+
+label_szczegoly_telefon = Label(ramka_szczegoly, text="Telefon:")
+label_szczegoly_telefon.grid(row=1, column=4)
+label_szczegoly_telefon_wartosc = Label(ramka_szczegoly, text="...")
+label_szczegoly_telefon_wartosc.grid(row=1, column=5)
+
+label_szczegoly_website = Label(ramka_szczegoly, text="Website:")
+label_szczegoly_website.grid(row=1, column=6)
+label_szczegoly_website_wartosc = Label(ramka_szczegoly, text="...")
+label_szczegoly_website_wartosc.grid(row=1, column=7)
 
 
 
